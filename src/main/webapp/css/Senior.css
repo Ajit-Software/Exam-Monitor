@@ -1,0 +1,130 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.container{
+    width:auto;
+    height:730px;
+    border: solid black 1px;
+    margin:0px;  
+    position:relative;     
+}
+#nav{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+#nav button{
+    width:100px;
+    height:40px;
+    background-color:#04aa6d;
+    transition: all;
+    transition-duration: 1s;
+    margin: 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+#nav h2,h3{
+    margin: 1rem;
+}
+
+#nav button:hover{
+    background-color: green;
+}
+.subcon{
+    margin-top:10%;
+    padding: 1rem;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+       
+}
+
+.box1{
+    width: 300px;
+    height:260px;
+    border:none;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: rgb(139, 236, 243);
+    border-radius:1rem; 
+}
+.box1:hover{
+    transform:perspective(700px) translateZ(100px);
+}
+.img1{
+    width: 180px;
+    height:150px;
+    border:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: azure;
+    border-radius: 5rem;
+    align-items: center;
+    margin: 2rem;
+}
+.img1 img{
+    height:70%;
+}
+
+.box1 h3{
+    margin: 0px;
+}
+
+.box2{
+    width: 300px;
+    height:260px;
+    border:none;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: rgba(252, 133, 97, 0.484);
+    border-radius:1rem;
+}
+.box2:hover{
+    transform:perspective(700px) translateZ(100px);
+}
+.box2 h3{
+    margin: 0px;
+}
+.box3{
+    width: 300px;
+    height:260px;
+    border:none;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: rgb(235, 235, 106);
+    border-radius:1rem;
+}
+.box3:hover{
+    transform:perspective(700px) translateZ(100px);
+}
+.box3 h3{
+    margin: 0px;
+}
+.box4{
+    width: 300px;
+    height:260px;
+    border:none;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: rgb(247, 193, 95);
+    border-radius:1rem;  
+    
+}
+.box4:hover{
+    transform:perspective(700px) translateZ(100px);
+}
+.box4 h3{
+    margin: 0px;
+}
+
+h3{
+text-align: center;
+}

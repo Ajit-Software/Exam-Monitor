@@ -1,0 +1,215 @@
+/* General Body and Container Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.navbar-item {
+    flex: 1;
+    margin: 5px;
+}
+
+.navbar-item label {
+    font-weight: bold;
+}
+
+.navbar-item input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin-top: 5px;
+}
+
+.table-wrapper {
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+table tr.highlight {
+    background-color: #cce5ff !important; /* Light blue */
+    animation: highlight-blue 2s ease-in-out;
+    scroll-margin-top: 100px; /* ensures visibility when scrolled into view */
+}
+
+@keyframes highlight-blue {
+    0% {
+        background-color: #99ccff;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+    }
+    50% {
+        background-color: #cce5ff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+    100% {
+        background-color: #f9f9f9;
+        box-shadow: none;
+    }
+}
+
+
+/* QR Scanner Section */
+#qr-video {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#startScanBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#startScanBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#startScanBtn:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+#camera-error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#qr-status {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#qr-status.error {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    #qr-video {
+        width: 100%;
+        height: auto;
+    }
+
+    #startScanBtn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-item input {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    #startScanBtn {
+        font-size: 14px;
+    }
+
+    #qr-status {
+        font-size: 14px;
+    }
+}
+
+/* Custom scrollbar for large tables */
+.table-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #007bff #f1f1f1;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+
+.qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,107 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: rgb(64, 145, 242);
+  color: #000;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: blue;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  grid-column: span 2;
+  justify-self: center;
+  padding: 0.75rem 2rem;
+  background: greenyellow;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.table-wrapper {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0;
+  overflow-x: auto;
+  background-color: #fff; /* Ensure white box background */
+  border-radius: 0.5rem;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  display: none;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+th, td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 1px;
+}
+
+th {
+  background-color: rgb(64, 145, 242);
+  color: white;
+}
+
+td input {
+  width: 100%;
+  padding: 4px;
+  font-size: 0.95rem;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#submitBtn {
+  margin-top: 20px;
+  display: none;
+}
+
+input[type="radio"] {
+  width: 50px;
+  height: 20px;
+}

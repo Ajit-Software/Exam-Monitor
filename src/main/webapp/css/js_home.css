@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #5a96318c;
+    color: #fff;
+    height: 100vh;
+    align-items:start;
+    position:relative;
+  }
+  .jsnav{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    gap:1rem;
+    margin:1rem;
+}
+button{
+    font-size: larger;
+    border-radius: .5rem;
+    background-color: red;
+    width: 5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+h2{
+   color: cornflowerblue;
+}
+
+.jplan {
+        width: 900px;
+        height: 550px;
+        background: #fff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-left: 20%;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      }
+#tplan{
+    font-size: larger;
+    border: 1px solid black;
+    border-radius: 5rem;
+    width:10rem;
+    height: 10rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:center ;
+}  
+img{
+    width:7rem;
+    height:7rem;
+}    
+
+h3{
+    
+    color: black;
+    font-size: larger;
+    margin-top: 25%;
+    margin-left:-8rem;
+    
+}
