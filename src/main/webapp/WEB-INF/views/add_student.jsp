@@ -26,6 +26,9 @@
 
                 <label>ERN:</label>
                 <input type="text" name="ern" required />
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="mail" required />
+
 
                 <br><br>
                 <button type="submit" class="submit">Submit</button>

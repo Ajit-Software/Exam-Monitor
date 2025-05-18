@@ -1,0 +1,3 @@
+INDEX VERSION 1.134
+file:/C:/Users/AJIT/Documents/workspace-spring-tool-suite-4-4.28.1.RELEASE/Exam/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index
+meta_index

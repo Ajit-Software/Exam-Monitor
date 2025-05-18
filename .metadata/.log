@@ -1,0 +1,138 @@
+!SESSION 2025-05-18 13:39:08.506 -----------------------------------------------
+eclipse.buildId=4.34.0.202502131954
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-18 13:39:16.167
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-05-18 13:48:03.124
+!MESSAGE Logback config file: C:\Users\AJIT\Documents\workspace-spring-tool-suite-4-4.28.1.RELEASE\Exam\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-05-18 13:48:04.503
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-05-18 13:48:04.503
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-05-18 13:48:05.489
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-05-18 13:48:05.489
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2025-05-18 13:48:10.702
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-05-18 13:48:11.871
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\AJIT'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:46.348
+!MESSAGE Classpath changed for project: JsplProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:47.809
+!MESSAGE Classpath changed for project: FiststlProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:47.811
+!MESSAGE Classpath changed for project: JsplProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:47.815
+!MESSAGE Classpath changed for project: SpringBootJDBC
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:47.819
+!MESSAGE Classpath changed for project: SpringBootJDBC-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:47.821
+!MESSAGE Classpath changed for project: SpringBootJDBC-2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:47.824
+!MESSAGE Classpath changed for project: SpringBootJDBC-3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:47.825
+!MESSAGE Classpath changed for project: SpringBootWEBDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:52.983
+!MESSAGE Classpath changed for project: FiststlProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:53.003
+!MESSAGE Boot project ADDED: FiststlProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:53.004
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:53.048
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:53.057
+!MESSAGE Classpath changed for project: FiststlProject
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-05-18 13:48:53.070
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\AJIT\OneDrive\Desktop\sts-4.28.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.6.v20250130-0529\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/Users/AJIT/Documents/workspace-spring-tool-suite-4-4.28.1.RELEASE/Exam/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1747556333069
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Users\AJIT\OneDrive\Desktop\sts-4.28.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.60.0.202502031607\servers\spring-boot-language-server\spring-boot-language-server-1.60.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:53.071
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-05-18 13:48:53.084
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 24420
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:55.802
+!MESSAGE Classpath changed for project: JsplProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:55.814
+!MESSAGE Boot project ADDED: JsplProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:55.842
+!MESSAGE Classpath changed for project: JsplProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:59.206
+!MESSAGE Classpath changed for project: SpringBootJDBC
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:59.215
+!MESSAGE Boot project ADDED: SpringBootJDBC
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:48:59.265
+!MESSAGE Classpath changed for project: SpringBootJDBC
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:49:01.026
+!MESSAGE Classpath changed for project: SpringBootJDBC-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:49:01.027
+!MESSAGE Boot project ADDED: SpringBootJDBC-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:49:02.643
+!MESSAGE Classpath changed for project: SpringBootJDBC-2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:49:02.644
+!MESSAGE Boot project ADDED: SpringBootJDBC-2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:49:04.328
+!MESSAGE Classpath changed for project: SpringBootJDBC-3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:49:04.341
+!MESSAGE Boot project ADDED: SpringBootJDBC-3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:49:05.921
+!MESSAGE Classpath changed for project: SpringBootWEBDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:49:05.929
+!MESSAGE Boot project ADDED: SpringBootWEBDemo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-05-18 13:49:05.997
+!MESSAGE Classpath changed for project: SpringBootWEBDemo

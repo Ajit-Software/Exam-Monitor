@@ -22,6 +22,7 @@ public class StudentController {
                              @RequestParam("studentClass") String studentClass,
                              @RequestParam("division") String division,
                              @RequestParam("ern") String ernStr,
+                             @RequestParam("mail") String mail,
                              Model model) {
         try {
             // Optional: validate ERN format if needed
@@ -37,8 +38,8 @@ public class StudentController {
             }
 
             // Insert the student data into the database
-            String sql = "INSERT INTO student (ern, name, class, division) VALUES (?, ?, ?, ?)";
-            jdbcTemplate.update(sql, ernStr, name, studentClass, division);
+            String sql = "INSERT INTO student (ern, name, class, division,mail) VALUES (?, ?, ?, ?,?)";
+            jdbcTemplate.update(sql, ernStr, name, studentClass, division,mail);
 
             model.addAttribute("message", "Student added successfully!");
         } catch (Exception e) {

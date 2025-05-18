@@ -38,8 +38,11 @@ public class PDFDwonload {
             Model model
     ) throws Exception {
 
-        String sql = "SELECT * FROM block_information WHERE block_id = ? AND exam_date = ?";
-        List<Map<String, Object>> blockInfoList = jdbcTemplate.queryForList(sql, blockId, examDate);
+    	String sql = "SELECT bi.*, js.jsname " +
+                "FROM block_information bi " +
+                "LEFT JOIN junior_supervisor js ON bi.supervisor_id = js.jid " +
+                "WHERE bi.block_id = ? AND bi.exam_date = ?";
+   List<Map<String, Object>> blockInfoList = jdbcTemplate.queryForList(sql, blockId, examDate);
 
         if (blockInfoList.isEmpty()) {
             model.addAttribute("error", "No block information found for Block ID: " + blockId + " on " + examDate);
@@ -66,6 +69,8 @@ public class PDFDwonload {
         response.setHeader("Content-Disposition", "attachment; filename=attendance_report.pdf");
 
         Map<String, Object> blockInfo = blockInfoList.get(0);
+        String supervisorName = blockInfo.get("jsname") != null ? blockInfo.get("jsname").toString() : "__________________";
+
         String subject = (String) blockInfo.get("subject");
         String examType = (String) blockInfo.get("exam_type");
         String startTime = String.valueOf(blockInfo.get("start_time"));
@@ -75,8 +80,10 @@ public class PDFDwonload {
         Document document = new Document();
         PdfWriter.getInstance(document, response.getOutputStream());
         document.open();
-
+       
         document.add(new Paragraph("Exam Report"));
+        document.add(new Paragraph("Suppervisor Name: " +supervisorName));
+
         document.add(new Paragraph("Block ID: " + blockId));
         document.add(new Paragraph("Subject: " + subject));
         document.add(new Paragraph("Exam Type: " + examType));
@@ -109,6 +116,12 @@ public class PDFDwonload {
         }
 
         document.add(table);
+        
+        document.add(new Paragraph(" ")); // Add some spacing
+        Paragraph signature = new Paragraph("\n\n\nSupervisor Signature");
+        signature.setAlignment(Paragraph.ALIGN_RIGHT);
+        document.add(signature);
+
         document.close();
 
         return null; // PDF was written directly to response
