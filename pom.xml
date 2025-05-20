@@ -31,6 +31,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
@@ -99,11 +100,7 @@
     </dependency>
 
     <!-- (Optional) Exam Records Management Dependency -->
-    <dependency>
-        <groupId>com.exammonitor</groupId>
-        <artifactId>exam-records-management</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </dependency>
+    
 
 
 
