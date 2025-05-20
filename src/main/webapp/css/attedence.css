@@ -41,10 +41,13 @@ body {
     margin-top: 5px;
 }
 
-table-wrapper {
+/* ✅ Only the table-wrapper was updated to be scrollable */
+.table-wrapper {
     margin: 20px 0;
-    overflow-y: auto;
     max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     scrollbar-width: thin;
     scrollbar-color: #007bff #f1f1f1;
 }
@@ -61,11 +64,6 @@ table-wrapper {
 .table-wrapper::-webkit-scrollbar-track {
     background-color: #f1f1f1;
 }
-
-
-
-
-
 
 table {
     width: 100%;

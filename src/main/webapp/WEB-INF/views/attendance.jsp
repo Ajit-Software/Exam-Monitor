@@ -52,10 +52,11 @@
 	    <p id="qr-status"></p>
 	</div>
 
+	
+	<div class="table-wrapper">
+	    <div class="scrollable-table">
+	        <table class="table">
 
-<div class="container">
-    <div class="table-wrapper">
-        <table class="table">
             <tr>
                 <th style="width: 100px;">ERN</th>
                 <th style="width: 200px;">NAME</th>
