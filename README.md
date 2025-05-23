@@ -1,25 +1,31 @@
 
 
-﻿# Exam-Monitor
- Role: Backend Developer using Spring Boot
+﻿# ExamMonitor
+
+Role: Backend Developer using Spring Boot, with additional work on database design and normalization in MySQL.
 
  
-About the Project 
-ExamMonitor is a system that helps manage offline college exams more easily and efficiently using QR codes. We built this project to solve common problems students face during exams—like confusion and long lines to check seat numbers on notice boards.
+# About the Project 
+ExamMonitor is a system that helps manage offline college exams more easily and efficiently using QR codes. We built this project to solve common problems students face during exams like confusion and long lines to check seat numbers on notice boards.
 With ExamMonitor, students get their seat and block details directly through email, which saves time and reduces stress. The system also helps exam staff track attendance and match answer sheets quickly.
 
-Features
+# Motivation
+  The motivation behind this project stemmed from personal experiences during exams, facing challenges like confusion and long queues for seeing seat arrangements on notice boards. ExamMonitor addresses these issues by directly sending seat details to students via email, streamlining the process and reducing exam-time stress. Additionally, students are required to write their seat number and answer sheet number on the sheet paper, but thorugh this project or based scanning removed this burden of students
+
+# Features
 - QR code scanning for hall tickets and answer sheets
 - Real-time attendance tracking
 - Automated generation of attendance and answer sheet mapping reports
 - Role-based login system for Admins and Supervisors
 - Email notifications for students and supervisors containing exam block and seat information
 
-Tech Stack
+
+# Tech Stack
 - Backend: Java Spring Boot
 - Database: MySQL
 - Frontend: HTML, CSS, JavaScript
 
+# Project Screenshots
 ![Screenshot 2025-05-14 110615](https://github.com/user-attachments/assets/7035480d-4876-44e2-87f7-029bd0046a07)
 ![Screenshot 2025-05-14 110629](https://github.com/user-attachments/assets/b62156e8-ee4d-4ffd-8ba8-572c63f13ad3)
 ![Screenshot 2025-05-14 110639](https://github.com/user-attachments/assets/355d7fbf-74c6-463f-8309-a807d1bf3688)
