@@ -13,10 +13,11 @@ Features
 - Role-based login system for Admins and Supervisors
 - Email notifications for students and supervisors containing exam block and seat information
 
-  Tech Stack:
+Tech Stack
 - Backend: Java Spring Boot
 - Database: MySQL
 - Frontend: HTML, CSS, JavaScript
 
+![Screenshot 2025-05-14 110615](https://github.com/user-attachments/assets/da2a2512-405b-40bf-a3fe-06b0f0d81a8d)
 
-![Screenshot](https://user-images.githubusercontent.com/12345678/your-image-name.png)
+
